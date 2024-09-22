@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en" <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ManifestMagic - Mobile App</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <header>
+    <h1>ManifestMagic</h1>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#vision-board">Vision Board</a></li>
+      <li><a href="#goals">Goals</a></li>
+      <li><a href="#affirmations">Daily Affirmations</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <!-- Vision Board Section -->
+    <section id="vision-board">
+      <h2>Vision Board</h2>
+      <div class="vision-board">
+        <input type="text" id="imageUrl" placeholder="Paste Image URL" />
+        <button onclick="addImage()">Add Image</button>
+        <div id="images" class="images"></div>
+      </div>
+    </section>
+
+    <!-- Goals Section -->
+    <section id="goals">
+      <h2>Set Your Goals</h2>
+      <input type="text" id="goalInput" placeholder="Enter your goal" />
+      <button onclick="addGoal()">Add Goal</button>
+      <ul id="goalList"></ul>
+    </section>
+
+    <!-- Daily Affirmation Section -->
+    <section id="affirmations">
+      <h2>Daily Affirmation</h2>
+      <p id="affirmationText">"You are capable of amazing things!"</p>
+      <button onclick="generateAffirmation()">New Affirmation</button>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 ManifestMagic</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+
+</html>
